@@ -1,4 +1,4 @@
-# jira-agile-board-css
+# jira-agile-board.css
 
 Per default the visual separation between stories on the JIRA Agile sprint backlog is not as good as it could and should be. This custom CSS works as a solution for this issue with the following adjustments:
 
