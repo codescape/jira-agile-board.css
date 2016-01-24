@@ -8,23 +8,23 @@
   min-height: 35px !important;
 }
 
-/* colorize open backlog items */
+/* colorize all swimlanes associated with an issue item */
 .ghx-swimlane-header[data-issue-key] {
   background-color: #296ca3;
   color: #ffffff;
 }
 
-/* colorize selected backlog items */
+/* colorize those swimlanes that are selected */
 .ghx-swimlane-header.ghx-selected[data-issue-key] {
   background-color: #205081;
 }
 
-/* colorize finished backlog items */
+/* colorize those swimlanes that represent a finished issue item */
 .ghx-swimlane-header.ghx-done[data-issue-key] {
   background-color: #4d8618;
 }
 
-/* remove styling at the end of a row */
+/* remove the fade to white effect at the end of those swimlines */
 .ghx-swimlane-header[data-issue-key]::after {
   content: none;
 }
@@ -34,7 +34,7 @@
   color: #eeeeee;
 }
 
-/* adjust link colors and expand dialog*/
+/* adjust link colors and expand icon */
 .ghx-swimlane-header[data-issue-key] .ghx-parent-key,
 .ghx-swimlane-header[data-issue-key] .ghx-iconfont.aui-iconfont-expanded::before {
   color: #b8d6f3;
