@@ -1,6 +1,6 @@
 <style>
 /*! --------------------------------------------------------------------------------------------- */
-/*! jira-agile-board.css v1.0.0 | MIT License | https://github.com/codescape/jira-agile-board.css */
+/*! jira-agile-board.css v1.1.0 | MIT License | https://github.com/codescape/jira-agile-board.css */
 /*! --------------------------------------------------------------------------------------------- */
 
 /* reduce minimal height for all task elements */
@@ -8,43 +8,64 @@
   min-height: 35px !important;
 }
 
-/* colorize all swimlanes associated with an issue item */
+/* colorize swim lanes */
+.ghx-swimlane-header {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* colorize open backlog items */
 .ghx-swimlane-header[data-issue-key] {
   background-color: #296ca3;
   color: #ffffff;
 }
 
-/* colorize those swimlanes that are selected */
+/* colorize selected backlog items */
 .ghx-swimlane-header.ghx-selected[data-issue-key] {
   background-color: #205081;
 }
 
-/* colorize those swimlanes that represent a finished issue item */
+/* colorize finished backlog items */
 .ghx-swimlane-header.ghx-done[data-issue-key] {
   background-color: #4d8618;
 }
 
-/* remove the fade to white effect at the end of those swimlines */
-.ghx-swimlane-header[data-issue-key]::after {
+/* colorize backlog items ready to be confirmed */
+.ghx-swimlane-header.ghx-out-of-sync {
+    background-color: #654982;
+}
+
+/* remove styling at the end of a row */
+.ghx-swimlane-header::after {
   content: none;
 }
 
 /* adjust text colors for darker backgrounds */
-.ghx-swimlane-header[data-issue-key] .ghx-description {
+.ghx-swimlane-header .ghx-description {
   color: #eeeeee;
 }
 
-/* adjust link colors and expand icon */
+/* adjust link colors and expand dialog*/
 .ghx-swimlane-header[data-issue-key] .ghx-parent-key,
 .ghx-swimlane-header[data-issue-key] .ghx-iconfont.aui-iconfont-expanded::before {
   color: #b8d6f3;
 }
 
-/* adjust borders around close dialog */
+/* adjust borders around close button */
 .ghx-swimlane-header.ghx-selected[data-issue-key] .ghx-bandaid,
 .ghx-swimlane-header[data-issue-key] .ghx-bandaid {
   background-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+ /* adjust color for close button text */
+.ghx-swimlane-header .ghx-bandaid .aui-button {
+  color: #ffffff;
+}
+
+/* hide priority icon in agile boards */
+.ghx-priority {
+  display: none;
 }
 </style>
