@@ -13,4 +13,4 @@ By default the visual separation between stories on the Jira Agile sprint backlo
 2. Locate the menu option `Announcement Banner` in the `User Interface` section
 3. Add the code from the file [src/announcement-banner.html](src/announcement-banner.html) from this repository into the announcement textarea
 
-The CSS was successfully tested in Jira 6.4.11 and is still functional in 7.9.1.
+The CSS was successfully updated and tested in Jira 7.10.2.
